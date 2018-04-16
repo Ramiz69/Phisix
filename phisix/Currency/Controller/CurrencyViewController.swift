@@ -39,6 +39,9 @@ class CurrencyViewController: UIViewController {
     //MARK: - Custom methods
     
     private func configureController() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 1))
         tableView.register(UINib(nibName: String(describing: CurrencyTableViewCell.self), bundle: nil),
                            forCellReuseIdentifier: CurrencyTableViewCell.reuseIdentifier)
         tableView.rowHeight = 50

@@ -36,6 +36,25 @@
 		4BAC66302084F56C00EBDF5B /* CoreSpotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC662F2084F56C00EBDF5B /* CoreSpotlight.swift */; };
 		4BAC66342084F87D00EBDF5B /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC66332084F87D00EBDF5B /* SettingsTableViewController.swift */; };
 		4BAC66372084F96C00EBDF5B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC66362084F96C00EBDF5B /* UserDefaults.swift */; };
+		4BAC663F2084FD8000EBDF5B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAC663E2084FD8000EBDF5B /* NotificationCenter.framework */; };
+		4BAC66422084FD8000EBDF5B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC66412084FD8000EBDF5B /* TodayViewController.swift */; };
+		4BAC66452084FD8000EBDF5B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAC66432084FD8000EBDF5B /* MainInterface.storyboard */; };
+		4BAC66492084FD8000EBDF5B /* phisixTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4BAC663C2084FD8000EBDF5B /* phisixTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4BAC664E2084FDE400EBDF5B /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF702084CF9900A8F96B /* CurrencyViewController.swift */; };
+		4BAC664F2084FE2F00EBDF5B /* CurrencyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF9D2084D33000A8F96B /* CurrencyEntity.swift */; };
+		4BAC66502084FE3900EBDF5B /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF9B2084D2C100A8F96B /* CurrencyModel.swift */; };
+		4BAC66512084FE3E00EBDF5B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF892084D01300A8F96B /* DataStore.swift */; };
+		4BAC66522084FE4400EBDF5B /* NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF8D2084D15600A8F96B /* NSManagedObject.swift */; };
+		4BAC66532084FE4D00EBDF5B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF872084D00A00A8F96B /* CoreDataManager.swift */; };
+		4BAC66542084FE5B00EBDF5B /* CurrencyViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFAF2084DED000A8F96B /* CurrencyViewController+UITableViewDelegate.swift */; };
+		4BAC66552084FE5E00EBDF5B /* CurrencyViewController+NSFetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFB12084DF4B00A8F96B /* CurrencyViewController+NSFetchedResultsControllerDelegate.swift */; };
+		4BAC66562084FE6800EBDF5B /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFB32084E19000A8F96B /* CurrencyTableViewCell.swift */; };
+		4BAC66582084FE7B00EBDF5B /* OperationGetCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFAC2084D6FF00A8F96B /* OperationGetCurrency.swift */; };
+		4BAC66592084FE8200EBDF5B /* UIResponder+Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF932084D1E400A8F96B /* UIResponder+Thread.swift */; };
+		4BAC665A2084FE8B00EBDF5B /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF962084D22D00A8F96B /* Operation.swift */; };
+		4BAC665B2084FE9400EBDF5B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC66362084F96C00EBDF5B /* UserDefaults.swift */; };
+		4BAC66602084FFBF00EBDF5B /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0EFB42084E19000A8F96B /* CurrencyTableViewCell.xib */; };
+		4BAC6661208500D500EBDF5B /* phisix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF752084CF9900A8F96B /* phisix.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +64,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4BAC661A2084F4A100EBDF5B;
 			remoteInfo = phisixKit;
+		};
+		4BAC66472084FD8000EBDF5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA0EF632084CF9900A8F96B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BAC663B2084FD8000EBDF5B;
+			remoteInfo = phisixTodayExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,6 +84,17 @@
 				4BAC66232084F4A100EBDF5B /* phisixKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAC664D2084FD8000EBDF5B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4BAC66492084FD8000EBDF5B /* phisixTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -94,6 +131,11 @@
 		4BAC662F2084F56C00EBDF5B /* CoreSpotlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSpotlight.swift; sourceTree = "<group>"; };
 		4BAC66332084F87D00EBDF5B /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		4BAC66362084F96C00EBDF5B /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		4BAC663C2084FD8000EBDF5B /* phisixTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = phisixTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAC663E2084FD8000EBDF5B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4BAC66412084FD8000EBDF5B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4BAC66442084FD8000EBDF5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4BAC66462084FD8000EBDF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +154,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BAC66392084FD8000EBDF5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAC663F2084FD8000EBDF5B /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -120,6 +170,8 @@
 			children = (
 				4BA0EF6D2084CF9900A8F96B /* phisix */,
 				4BAC661C2084F4A100EBDF5B /* phisixKit */,
+				4BAC66402084FD8000EBDF5B /* phisixTodayExtension */,
+				4BAC663D2084FD8000EBDF5B /* Frameworks */,
 				4BA0EF6C2084CF9900A8F96B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +181,7 @@
 			children = (
 				4BA0EF6B2084CF9900A8F96B /* phisix.app */,
 				4BAC661B2084F4A100EBDF5B /* phisixKit.framework */,
+				4BAC663C2084FD8000EBDF5B /* phisixTodayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -368,6 +421,40 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		4BAC663D2084FD8000EBDF5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC663E2084FD8000EBDF5B /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BAC66402084FD8000EBDF5B /* phisixTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC665C2084FF1F00EBDF5B /* Controller */,
+				4BAC665D2084FF3000EBDF5B /* View */,
+				4BAC66462084FD8000EBDF5B /* Info.plist */,
+			);
+			path = phisixTodayExtension;
+			sourceTree = "<group>";
+		};
+		4BAC665C2084FF1F00EBDF5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC66412084FD8000EBDF5B /* TodayViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BAC665D2084FF3000EBDF5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC66432084FD8000EBDF5B /* MainInterface.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -390,11 +477,13 @@
 				4BA0EF682084CF9900A8F96B /* Frameworks */,
 				4BA0EF692084CF9900A8F96B /* Resources */,
 				4BAC66272084F4A100EBDF5B /* Embed Frameworks */,
+				4BAC664D2084FD8000EBDF5B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4BAC66212084F4A100EBDF5B /* PBXTargetDependency */,
+				4BAC66482084FD8000EBDF5B /* PBXTargetDependency */,
 			);
 			name = phisix;
 			productName = phisix;
@@ -419,6 +508,23 @@
 			productReference = 4BAC661B2084F4A100EBDF5B /* phisixKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4BAC663B2084FD8000EBDF5B /* phisixTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAC664A2084FD8000EBDF5B /* Build configuration list for PBXNativeTarget "phisixTodayExtension" */;
+			buildPhases = (
+				4BAC66382084FD8000EBDF5B /* Sources */,
+				4BAC66392084FD8000EBDF5B /* Frameworks */,
+				4BAC663A2084FD8000EBDF5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = phisixTodayExtension;
+			productName = phisixTodayExtension;
+			productReference = 4BAC663C2084FD8000EBDF5B /* phisixTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -433,6 +539,9 @@
 						CreatedOnToolsVersion = 9.3;
 					};
 					4BAC661A2084F4A100EBDF5B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					4BAC663B2084FD8000EBDF5B = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -452,6 +561,7 @@
 			targets = (
 				4BA0EF6A2084CF9900A8F96B /* phisix */,
 				4BAC661A2084F4A100EBDF5B /* phisixKit */,
+				4BAC663B2084FD8000EBDF5B /* phisixTodayExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -472,6 +582,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAC663A2084FD8000EBDF5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAC66602084FFBF00EBDF5B /* CurrencyTableViewCell.xib in Resources */,
+				4BAC66452084FD8000EBDF5B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +633,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BAC66382084FD8000EBDF5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAC66422084FD8000EBDF5B /* TodayViewController.swift in Sources */,
+				4BAC66582084FE7B00EBDF5B /* OperationGetCurrency.swift in Sources */,
+				4BAC66592084FE8200EBDF5B /* UIResponder+Thread.swift in Sources */,
+				4BAC66552084FE5E00EBDF5B /* CurrencyViewController+NSFetchedResultsControllerDelegate.swift in Sources */,
+				4BAC6661208500D500EBDF5B /* phisix.xcdatamodeld in Sources */,
+				4BAC66522084FE4400EBDF5B /* NSManagedObject.swift in Sources */,
+				4BAC664E2084FDE400EBDF5B /* CurrencyViewController.swift in Sources */,
+				4BAC66502084FE3900EBDF5B /* CurrencyModel.swift in Sources */,
+				4BAC66542084FE5B00EBDF5B /* CurrencyViewController+UITableViewDelegate.swift in Sources */,
+				4BAC66512084FE3E00EBDF5B /* DataStore.swift in Sources */,
+				4BAC66532084FE4D00EBDF5B /* CoreDataManager.swift in Sources */,
+				4BAC665A2084FE8B00EBDF5B /* Operation.swift in Sources */,
+				4BAC66562084FE6800EBDF5B /* CurrencyTableViewCell.swift in Sources */,
+				4BAC665B2084FE9400EBDF5B /* UserDefaults.swift in Sources */,
+				4BAC664F2084FE2F00EBDF5B /* CurrencyEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -521,6 +662,11 @@
 			isa = PBXTargetDependency;
 			target = 4BAC661A2084F4A100EBDF5B /* phisixKit */;
 			targetProxy = 4BAC66202084F4A100EBDF5B /* PBXContainerItemProxy */;
+		};
+		4BAC66482084FD8000EBDF5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BAC663B2084FD8000EBDF5B /* phisixTodayExtension */;
+			targetProxy = 4BAC66472084FD8000EBDF5B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -539,6 +685,14 @@
 				4BA0EF7B2084CF9B00A8F96B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4BAC66432084FD8000EBDF5B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BAC66442084FD8000EBDF5B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -752,6 +906,44 @@
 			};
 			name = Release;
 		};
+		4BAC664B2084FD8000EBDF5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8AD8N54BY6;
+				INFOPLIST_FILE = phisixTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kichibekov-Ramiz.phisix.phisixTodayExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BAC664C2084FD8000EBDF5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8AD8N54BY6;
+				INFOPLIST_FILE = phisixTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kichibekov-Ramiz.phisix.phisixTodayExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -778,6 +970,15 @@
 			buildConfigurations = (
 				4BAC66242084F4A100EBDF5B /* Debug */,
 				4BAC66252084F4A100EBDF5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BAC664A2084FD8000EBDF5B /* Build configuration list for PBXNativeTarget "phisixTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAC664B2084FD8000EBDF5B /* Debug */,
+				4BAC664C2084FD8000EBDF5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
