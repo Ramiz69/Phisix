@@ -21,16 +21,46 @@
 		4BA0EF972084D22D00A8F96B /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF962084D22D00A8F96B /* Operation.swift */; };
 		4BA0EF9C2084D2C100A8F96B /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF9B2084D2C100A8F96B /* CurrencyModel.swift */; };
 		4BA0EF9E2084D33000A8F96B /* CurrencyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EF9D2084D33000A8F96B /* CurrencyEntity.swift */; };
-		4BA0EFA22084D52800A8F96B /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFA12084D52800A8F96B /* CurrencyManager.swift */; };
-		4BA0EFA52084D65500A8F96B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFA42084D65500A8F96B /* Helper.swift */; };
-		4BA0EFA82084D67300A8F96B /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFA72084D67300A8F96B /* ErrorManager.swift */; };
-		4BA0EFAA2084D69A00A8F96B /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFA92084D69A00A8F96B /* ServerError.swift */; };
 		4BA0EFAD2084D6FF00A8F96B /* OperationGetCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFAC2084D6FF00A8F96B /* OperationGetCurrency.swift */; };
 		4BA0EFB02084DED000A8F96B /* CurrencyViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFAF2084DED000A8F96B /* CurrencyViewController+UITableViewDelegate.swift */; };
 		4BA0EFB22084DF4B00A8F96B /* CurrencyViewController+NSFetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFB12084DF4B00A8F96B /* CurrencyViewController+NSFetchedResultsControllerDelegate.swift */; };
 		4BA0EFB52084E19000A8F96B /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFB32084E19000A8F96B /* CurrencyTableViewCell.swift */; };
 		4BA0EFB62084E19000A8F96B /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0EFB42084E19000A8F96B /* CurrencyTableViewCell.xib */; };
+		4BAC661F2084F4A100EBDF5B /* phisixKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BAC661D2084F4A100EBDF5B /* phisixKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BAC66222084F4A100EBDF5B /* phisixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAC661B2084F4A100EBDF5B /* phisixKit.framework */; };
+		4BAC66232084F4A100EBDF5B /* phisixKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAC661B2084F4A100EBDF5B /* phisixKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BAC66282084F4B700EBDF5B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFA42084D65500A8F96B /* Helper.swift */; };
+		4BAC66292084F4C300EBDF5B /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFA92084D69A00A8F96B /* ServerError.swift */; };
+		4BAC662A2084F4C700EBDF5B /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFA12084D52800A8F96B /* CurrencyManager.swift */; };
+		4BAC662B2084F4C900EBDF5B /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0EFA72084D67300A8F96B /* ErrorManager.swift */; };
+		4BAC66302084F56C00EBDF5B /* CoreSpotlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC662F2084F56C00EBDF5B /* CoreSpotlight.swift */; };
+		4BAC66342084F87D00EBDF5B /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC66332084F87D00EBDF5B /* SettingsTableViewController.swift */; };
+		4BAC66372084F96C00EBDF5B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAC66362084F96C00EBDF5B /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BAC66202084F4A100EBDF5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA0EF632084CF9900A8F96B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BAC661A2084F4A100EBDF5B;
+			remoteInfo = phisixKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4BAC66272084F4A100EBDF5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4BAC66232084F4A100EBDF5B /* phisixKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4BA0EF6B2084CF9900A8F96B /* phisix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phisix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,10 +88,24 @@
 		4BA0EFB12084DF4B00A8F96B /* CurrencyViewController+NSFetchedResultsControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyViewController+NSFetchedResultsControllerDelegate.swift"; sourceTree = "<group>"; };
 		4BA0EFB32084E19000A8F96B /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		4BA0EFB42084E19000A8F96B /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		4BAC661B2084F4A100EBDF5B /* phisixKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = phisixKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAC661D2084F4A100EBDF5B /* phisixKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = phisixKit.h; sourceTree = "<group>"; };
+		4BAC661E2084F4A100EBDF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BAC662F2084F56C00EBDF5B /* CoreSpotlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSpotlight.swift; sourceTree = "<group>"; };
+		4BAC66332084F87D00EBDF5B /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		4BAC66362084F96C00EBDF5B /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4BA0EF682084CF9900A8F96B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAC66222084F4A100EBDF5B /* phisixKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAC66172084F4A100EBDF5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				4BA0EF6D2084CF9900A8F96B /* phisix */,
+				4BAC661C2084F4A100EBDF5B /* phisixKit */,
 				4BA0EF6C2084CF9900A8F96B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				4BA0EF6B2084CF9900A8F96B /* phisix.app */,
+				4BAC661B2084F4A100EBDF5B /* phisixKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,10 +136,9 @@
 		4BA0EF6D2084CF9900A8F96B /* phisix */ = {
 			isa = PBXGroup;
 			children = (
-				4BA0EFA32084D64700A8F96B /* Helpers */,
-				4BA0EF9F2084D50800A8F96B /* Network */,
 				4BA0EF8B2084D13000A8F96B /* Extensions */,
 				4BA0EF6E2084CF9900A8F96B /* AppDelegate.swift */,
+				4BAC66312084F85200EBDF5B /* Settings */,
 				4BA0EF982084D29100A8F96B /* Currency */,
 				4BA0EF722084CF9900A8F96B /* Main.storyboard */,
 				4BA0EF7A2084CF9B00A8F96B /* LaunchScreen.storyboard */,
@@ -143,6 +188,7 @@
 		4BA0EF8B2084D13000A8F96B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4BAC66352084F92D00EBDF5B /* UserDefaults */,
 				4BA0EFAE2084DEB200A8F96B /* Currency */,
 				4BA0EF952084D21D00A8F96B /* Operation */,
 				4BA0EF922084D1CD00A8F96B /* UIResponder */,
@@ -262,7 +308,78 @@
 			path = Currency;
 			sourceTree = "<group>";
 		};
+		4BAC661C2084F4A100EBDF5B /* phisixKit */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC662C2084F54C00EBDF5B /* Extensions */,
+				4BA0EFA32084D64700A8F96B /* Helpers */,
+				4BA0EF9F2084D50800A8F96B /* Network */,
+				4BAC661D2084F4A100EBDF5B /* phisixKit.h */,
+				4BAC661E2084F4A100EBDF5B /* Info.plist */,
+			);
+			path = phisixKit;
+			sourceTree = "<group>";
+		};
+		4BAC662C2084F54C00EBDF5B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC662D2084F55200EBDF5B /* Managers */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4BAC662D2084F55200EBDF5B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC662E2084F55700EBDF5B /* CoreSpotlight */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4BAC662E2084F55700EBDF5B /* CoreSpotlight */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC662F2084F56C00EBDF5B /* CoreSpotlight.swift */,
+			);
+			path = CoreSpotlight;
+			sourceTree = "<group>";
+		};
+		4BAC66312084F85200EBDF5B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC66322084F86C00EBDF5B /* Controller */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4BAC66322084F86C00EBDF5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC66332084F87D00EBDF5B /* SettingsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4BAC66352084F92D00EBDF5B /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				4BAC66362084F96C00EBDF5B /* UserDefaults.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BAC66182084F4A100EBDF5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAC661F2084F4A100EBDF5B /* phisixKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4BA0EF6A2084CF9900A8F96B /* phisix */ = {
@@ -272,15 +389,35 @@
 				4BA0EF672084CF9900A8F96B /* Sources */,
 				4BA0EF682084CF9900A8F96B /* Frameworks */,
 				4BA0EF692084CF9900A8F96B /* Resources */,
+				4BAC66272084F4A100EBDF5B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4BAC66212084F4A100EBDF5B /* PBXTargetDependency */,
 			);
 			name = phisix;
 			productName = phisix;
 			productReference = 4BA0EF6B2084CF9900A8F96B /* phisix.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4BAC661A2084F4A100EBDF5B /* phisixKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BAC66262084F4A100EBDF5B /* Build configuration list for PBXNativeTarget "phisixKit" */;
+			buildPhases = (
+				4BAC66162084F4A100EBDF5B /* Sources */,
+				4BAC66172084F4A100EBDF5B /* Frameworks */,
+				4BAC66182084F4A100EBDF5B /* Headers */,
+				4BAC66192084F4A100EBDF5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = phisixKit;
+			productName = phisixKit;
+			productReference = 4BAC661B2084F4A100EBDF5B /* phisixKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -293,6 +430,9 @@
 				ORGANIZATIONNAME = "Рамиз Кичибеков";
 				TargetAttributes = {
 					4BA0EF6A2084CF9900A8F96B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					4BAC661A2084F4A100EBDF5B = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -311,6 +451,7 @@
 			projectRoot = "";
 			targets = (
 				4BA0EF6A2084CF9900A8F96B /* phisix */,
+				4BAC661A2084F4A100EBDF5B /* phisixKit */,
 			);
 		};
 /* End PBXProject section */
@@ -327,6 +468,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BAC66192084F4A100EBDF5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -337,26 +485,44 @@
 				4BA0EF9C2084D2C100A8F96B /* CurrencyModel.swift in Sources */,
 				4BA0EFAD2084D6FF00A8F96B /* OperationGetCurrency.swift in Sources */,
 				4BA0EF712084CF9900A8F96B /* CurrencyViewController.swift in Sources */,
-				4BA0EFA82084D67300A8F96B /* ErrorManager.swift in Sources */,
 				4BA0EF8E2084D15600A8F96B /* NSManagedObject.swift in Sources */,
 				4BA0EF772084CF9900A8F96B /* phisix.xcdatamodeld in Sources */,
+				4BAC66372084F96C00EBDF5B /* UserDefaults.swift in Sources */,
 				4BA0EFB52084E19000A8F96B /* CurrencyTableViewCell.swift in Sources */,
-				4BA0EFAA2084D69A00A8F96B /* ServerError.swift in Sources */,
 				4BA0EF882084D00A00A8F96B /* CoreDataManager.swift in Sources */,
 				4BA0EF8A2084D01300A8F96B /* DataStore.swift in Sources */,
 				4BA0EF972084D22D00A8F96B /* Operation.swift in Sources */,
 				4BA0EFB22084DF4B00A8F96B /* CurrencyViewController+NSFetchedResultsControllerDelegate.swift in Sources */,
 				4BA0EF912084D17D00A8F96B /* UIViewController+UIAlertController.swift in Sources */,
 				4BA0EFB02084DED000A8F96B /* CurrencyViewController+UITableViewDelegate.swift in Sources */,
+				4BAC66342084F87D00EBDF5B /* SettingsTableViewController.swift in Sources */,
 				4BA0EF942084D1E400A8F96B /* UIResponder+Thread.swift in Sources */,
 				4BA0EF6F2084CF9900A8F96B /* AppDelegate.swift in Sources */,
-				4BA0EFA52084D65500A8F96B /* Helper.swift in Sources */,
-				4BA0EFA22084D52800A8F96B /* CurrencyManager.swift in Sources */,
 				4BA0EF9E2084D33000A8F96B /* CurrencyEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BAC66162084F4A100EBDF5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAC66282084F4B700EBDF5B /* Helper.swift in Sources */,
+				4BAC662A2084F4C700EBDF5B /* CurrencyManager.swift in Sources */,
+				4BAC66302084F56C00EBDF5B /* CoreSpotlight.swift in Sources */,
+				4BAC662B2084F4C900EBDF5B /* ErrorManager.swift in Sources */,
+				4BAC66292084F4C300EBDF5B /* ServerError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BAC66212084F4A100EBDF5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BAC661A2084F4A100EBDF5B /* phisixKit */;
+			targetProxy = 4BAC66202084F4A100EBDF5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4BA0EF722084CF9900A8F96B /* Main.storyboard */ = {
@@ -495,6 +661,7 @@
 		4BA0EF812084CF9B00A8F96B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8AD8N54BY6;
@@ -513,6 +680,7 @@
 		4BA0EF822084CF9B00A8F96B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8AD8N54BY6;
@@ -525,6 +693,62 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BAC66242084F4A100EBDF5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8AD8N54BY6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = phisixKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kichibekov-Ramiz.phisixKit";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BAC66252084F4A100EBDF5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8AD8N54BY6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = phisixKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kichibekov-Ramiz.phisixKit";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -545,6 +769,15 @@
 			buildConfigurations = (
 				4BA0EF812084CF9B00A8F96B /* Debug */,
 				4BA0EF822084CF9B00A8F96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BAC66262084F4A100EBDF5B /* Build configuration list for PBXNativeTarget "phisixKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAC66242084F4A100EBDF5B /* Debug */,
+				4BAC66252084F4A100EBDF5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

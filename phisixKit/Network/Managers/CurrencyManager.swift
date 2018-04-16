@@ -13,17 +13,13 @@ public enum ContentType: Int {
     
     public var description: String {
         switch self {
-        case .stocks: return "Stocks"
-        default:
-            break
+            case .stocks: return "Stocks"
         }
     }
     
     var jsonString: String {
         switch self {
-        case .stocks: return "stocks.json"
-        default:
-            break
+            case .stocks: return "stocks.json"
         }
     }
 }

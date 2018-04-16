@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import phisixKit
 
 final class OperationGetCurrency: Operation {
     
@@ -42,7 +43,24 @@ final class OperationGetCurrency: Operation {
                                         name: name,
                                         volume: volume,
                                         amount: amount)
-                _ = CurrencyEntity.createOrUpdate(withCurrency: currency)
+                let currencyEntity = CurrencyEntity.createOrUpdate(withCurrency: currency)
+                if !UserDefaults.isIndexed {
+                    guard let model = currencyEntity else {
+                        return
+                    }
+                    SpotlightManager.setDataForDisplay(with: model.name,
+                                                       contentDescription: "Volume: \(model.volume) Amount: \(model.amount)",
+                                                       keywords: nil,
+                                                       creationDate: nil,
+                                                       url: nil,
+                                                       keyID: model.symbol,
+                                                       completionHandler: { (error) in
+                                                        guard let error = error else {
+                                                            return
+                                                        }
+                                                        print("Spotlight Error = \(error.localizedDescription)")
+                    })
+                }
             }
             guard let completionBlock = self.completionBlock else {
                 return
