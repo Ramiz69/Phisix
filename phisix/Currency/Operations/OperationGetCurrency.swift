@@ -29,16 +29,17 @@ final class OperationGetCurrency: Operation {
                 else {
                 return
             }
-            print("JSON = \(json)")
             for stock in stocks {
                 guard
+                    let symbol = stock["symbol"] as? String,
                     let name = stock["name"] as? String,
                     let volume = stock["volume"] as? Int,
                     let price = stock["price"] as? [String: Any],
                     let amount = price["amount"] as? Double else {
                     return
                 }
-                let currency = Currency(name,
+                let currency = Currency(symbol,
+                                        name: name,
                                         volume: volume,
                                         amount: amount)
                 _ = CurrencyEntity.createOrUpdate(withCurrency: currency)

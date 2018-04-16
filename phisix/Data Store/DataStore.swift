@@ -17,4 +17,8 @@ final class DataStore {
     public class func saveDataBase() {
         CoreDataManager.shared.saveContext()
     }
+    
+    public class func saveMainDataBase() {
+        CoreDataManager.shared.saveMainContext()
+    }
 }

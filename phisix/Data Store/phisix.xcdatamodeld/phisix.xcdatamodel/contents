@@ -3,9 +3,10 @@
     <entity name="CurrencyEntity" representedClassName="CurrencyEntity" syncable="YES">
         <attribute name="amount" attributeType="Double" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="symbol" attributeType="String" syncable="YES"/>
         <attribute name="volume" attributeType="Integer 64" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CurrencyEntity" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="CurrencyEntity" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

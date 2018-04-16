@@ -9,11 +9,13 @@
 import Foundation
 
 struct Currency {
+    let symbol: String
     let name: String
     let volume: Int
     let amount: Double
     
-    init(_ name: String, volume: Int, amount: Double) {
+    init(_ symbol: String, name: String, volume: Int, amount: Double) {
+        self.symbol = symbol
         self.name = name
         self.volume = volume
         self.amount = amount

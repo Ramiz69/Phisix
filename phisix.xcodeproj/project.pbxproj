@@ -95,6 +95,7 @@
 				4BA0EF8B2084D13000A8F96B /* Extensions */,
 				4BA0EF6E2084CF9900A8F96B /* AppDelegate.swift */,
 				4BA0EF982084D29100A8F96B /* Currency */,
+				4BA0EF722084CF9900A8F96B /* Main.storyboard */,
 				4BA0EF7A2084CF9B00A8F96B /* LaunchScreen.storyboard */,
 				4BA0EF842084CFD000A8F96B /* Data Store */,
 				4BA0EF832084CFA900A8F96B /* SupportingFiles */,
@@ -196,7 +197,6 @@
 		4BA0EF992084D29900A8F96B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4BA0EF722084CF9900A8F96B /* Main.storyboard */,
 				4BA0EFB32084E19000A8F96B /* CurrencyTableViewCell.swift */,
 				4BA0EFB42084E19000A8F96B /* CurrencyTableViewCell.xib */,
 			);

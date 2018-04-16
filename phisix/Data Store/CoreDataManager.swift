@@ -12,6 +12,7 @@ import CoreData
 final class CoreDataManager {
     
     public var managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+    public var privateManagedObjectContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
     
     static let shared: CoreDataManager = {
         return CoreDataManager()
@@ -27,30 +28,29 @@ final class CoreDataManager {
         return container
     }()
     
-    private enum EntityType: String {
-        case category = "CategoryEntity"
-        case music = "MusicEntity"
-    }
-    
     //MARK: - Private methods
     
     private init() {
         managedObjectContext = persistentContainer.viewContext
-    }
-    
-    private func createRequestOnDataBase(_ entityType: EntityType) -> (context: NSManagedObjectContext, request:  NSFetchRequest<NSFetchRequestResult>) {
-        let context = managedObjectContext
-        let entityDescription = NSEntityDescription.entity(forEntityName: entityType.rawValue, in: context)
-        let request = NSFetchRequest<NSFetchRequestResult>()
-        request.entity = entityDescription
-        
-        return (context, request)
+        privateManagedObjectContext.parent = managedObjectContext
     }
     
     //MARK: - Public methods
     
+    public func saveMainContext () {
+        let context = managedObjectContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+    }
+    
     public func saveContext () {
-        let context = persistentContainer.viewContext
+        let context = privateManagedObjectContext
         if context.hasChanges {
             do {
                 try context.save()
